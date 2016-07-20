@@ -7,43 +7,21 @@
     </div>
     <div class="grid-container">
       <div class="grid">
-        {{log model}}
-        {{!-- {{#each model as |card|}}
-        --}} <div class="grid-card">
-          <div class="grid-card__content">
-            <div class="img-frame">
-              <img src="https://www.placecage.com/100/100" alt="">
-            </div>
-            <div class="text">
-              <h2 class="name">bar name</h2>
-              <p class="est">est. 2016</p>
-            </div>
-          </div>
-      </div>
+        {{log model.data}}
+        {{#each model.data as |card|}}
       <div class="grid-card">
         <div class="grid-card__content">
           <div class="img-frame">
-            <img src="https://www.placecage.com/100/100" alt="">
+            <img src="{{ card.images.icon }}" alt="">
           </div>
           <div class="text">
-            <h2 class="name">bar name</h2>
-            <p class="est">est. 2016</p>
+            <h4 class="name">{{ card.nameShortDisplay}}</h4>
+            <p class="est">EST. {{ card.established }}</p>
           </div>
         </div>
       </div>
-      <div class="grid-card">
-        <div class="grid-card__content">
-          <div class="img-frame">
-            <img src="https://www.placecage.com/100/100" alt="">
-          </div>
-          <div class="text">
-            <h2 class="name">bar name</h2>
-            <p class="est">est. 2016</p>
-          </div>
-        </div>
-      </div>
-      {{!-- {{/each}}
-      --}} </div>
+     {{/each}}
+    </div>
     </div>
   </div>
 </div>

@@ -23,11 +23,11 @@ body {
 }
 .header {
   background: #ddf8fb;
-  width: 50rem;
+  width: 45rem;
   margin: none;
-  height: 4rem;
+  height: 3rem;
   display: flex;
-
+  align-items: center;
 }
 .title {
   font-size: 1.3rem;
@@ -44,18 +44,25 @@ body {
 .grid {
   background: #000;
   display: flex;
-  width: 50rem;
+  flex-wrap: wrap;
+  width: 45rem;
   justify-content: center;
 }
 .grid-card {
   display: flex;
   flex-wrap: wrap;
   background: #fff;
-  margin: 1rem 1rem 1rem 0;
+  margin: 1rem 1.5rem 1rem 0;
   width: calc(100% / 4);
   flex-grow: 1;
 }
 .img-frame {
+ width: 50%;
+ padding: .5rem;
+}
+img {
+  border: none;
+  width: 100%;
 }
 
 .grid-card__content {
@@ -65,11 +72,13 @@ body {
 .text {
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 .5rem;
+  width: 100%;
 }
 .name {
+  margin: 0;
+  padding: 1rem 0 .5rem 0;
 }
 .est {
-
+  font-size: .8rem;
   margin: 0;
 }
