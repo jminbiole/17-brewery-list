@@ -1,22 +1,53 @@
-
-    <div class="page">
+<div class="page">
+  <div class="innards">
+    <div class="header-container">
       <div class="header">
-        <p>New Breweries</p>
+        <p class="title">New Breweries</p>
       </div>
-      <div class="main-container">
-        <div class="grid">
-          <div class="grid-card">
-            <div class="grid-card__content">
-              <div class="img-frame">
-                <img src="http://www.placecera.com/c/100/100" alt="">
-              </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid">
+        {{log model}}
+        {{!-- {{#each model as |card|}}
+        --}} <div class="grid-card">
+          <div class="grid-card__content">
+            <div class="img-frame">
+              <img src="https://www.placecage.com/100/100" alt="">
+            </div>
+            <div class="text">
               <h2 class="name">bar name</h2>
               <p class="est">est. 2016</p>
             </div>
           </div>
+      </div>
+      <div class="grid-card">
+        <div class="grid-card__content">
+          <div class="img-frame">
+            <img src="https://www.placecage.com/100/100" alt="">
+          </div>
+          <div class="text">
+            <h2 class="name">bar name</h2>
+            <p class="est">est. 2016</p>
+          </div>
         </div>
       </div>
+      <div class="grid-card">
+        <div class="grid-card__content">
+          <div class="img-frame">
+            <img src="https://www.placecage.com/100/100" alt="">
+          </div>
+          <div class="text">
+            <h2 class="name">bar name</h2>
+            <p class="est">est. 2016</p>
+          </div>
+        </div>
+      </div>
+      {{!-- {{/each}}
+      --}} </div>
     </div>
+  </div>
+</div>
+
 
 
 {{outlet}}
