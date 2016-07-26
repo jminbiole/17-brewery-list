@@ -1,0 +1,31 @@
+<div class="page">
+  <div class="innards">
+    <div class="header-container">
+      <div class="header">
+        <p class="title">New Breweries</p>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid">
+        {{log model.data}}
+        {{#each model.data as |card|}}
+      <div class="grid-card">
+        <div class="grid-card__content">
+          <div class="img-frame">
+            <img src="{{ card.images.icon }}" alt="">
+          </div>
+          <div class="text">
+            <h4 class="name">{{ card.nameShortDisplay}}</h4>
+            <p class="est">EST. {{ card.established }}</p>
+          </div>
+        </div>
+      </div>
+     {{/each}}
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+{{outlet}}
